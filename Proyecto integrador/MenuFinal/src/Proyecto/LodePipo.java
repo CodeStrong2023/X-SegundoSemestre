@@ -300,6 +300,8 @@ public class LodePipo {
                     }
                 } while (opCarta != 0);
 
+            }else if(opMesa = 4){
+                System.out.println(Carta);
             }
                 } while (opMesa != 0);
             }
