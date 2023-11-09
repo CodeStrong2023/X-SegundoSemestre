@@ -1,5 +1,6 @@
 package Proyecto;
 
+import java.sql.SQLOutput;
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -39,11 +40,15 @@ public class LodePipo {
 
 
         do {
+            System.out.println("");
             System.out.println("\tBienvenido a el menu");
-            System.out.println("0. Regresar");
-            System.out.println("Seleccione la mesa que desea cargar");
+            System.out.println("""
+                    ......:LO DE PIPO:......
+                    Seleccione la mesa que desea cargar (1-3)
+                    4: si desea imprimir la carta general
+                    0. Regresar
+                    """);
             opMesa = sc.nextByte();
-            System.out.println("0. Regresar");
             if (opMesa == 1) {
                 do {
                     mostrarMenu();
@@ -61,6 +66,11 @@ public class LodePipo {
                             } else if (opPlato == 3) {
                                 total += 500;
                                 pedido += "\nEnsalada";
+                            } else if (opPlato > 3){
+                                System.out.println("""
+                                        xxx-Esta opcion no corresponde a ningun plato-xxx
+                                        Por favor, ingrese una opcion existente
+                                                                           """);
                             }
                             break;
                         case 2:
@@ -81,6 +91,11 @@ public class LodePipo {
                             } else if (opPlato == 5) {
                                 total += 500;
                                 pedido += "\nRavioles";
+                            }else if (opPlato > 5){
+                                System.out.println("""
+                                        xxx-Esta opcion no corresponde a ningun plato-xxx
+                                        Por favor, ingrese una opcion existente
+                                                                           """);
                             }
                             break;
                         case 3:
@@ -98,6 +113,11 @@ public class LodePipo {
                             } else if (opPlato == 4) {
                                 total += 500;
                                 pedido += "\nCafe con medialuna";
+                            }else if (opPlato > 4){
+                                System.out.println("""
+                                        xxx-Esta opcion no corresponde a ningun plato-xxx
+                                        Por favor, ingrese una opcion existente
+                                                                           """);
                             }
                             break;
                         case 4:
@@ -118,6 +138,11 @@ public class LodePipo {
                             } else if (opPlato == 5) {
                                 total += 500;
                                 pedido += "\nAgua Mineral - 1000ml";
+                            }else if (opPlato > 5){
+                                System.out.println("""
+                                        xxx-Esta opcion no corresponde a ningun plato-xxx
+                                        Por favor, ingrese una opcion existente
+                                                                           """);
                             }
                             break;
                         case 5:
@@ -145,6 +170,11 @@ public class LodePipo {
                                     } else if (opPlato == 3) {
                                         total1 += 500;
                                         pedido1 += "\nEnsalada";
+                                    }else if (opPlato > 3){
+                                        System.out.println("""
+                                        xxx-Esta opcion no corresponde a ningun plato-xxx
+                                        Por favor, ingrese una opcion existente
+                                                                           """);
                                     }
                                     break;
                                 case 2:
@@ -165,6 +195,11 @@ public class LodePipo {
                                     } else if (opPlato == 5) {
                                         total1 += 500;
                                         pedido1 += "\nRavioles";
+                                    }else if (opPlato > 5){
+                                        System.out.println("""
+                                        xxx-Esta opcion no corresponde a ningun plato-xxx
+                                        Por favor, ingrese una opcion existente
+                                                                           """);
                                     }
                                     break;
                                 case 3:
@@ -182,6 +217,11 @@ public class LodePipo {
                                     } else if (opPlato == 4) {
                                         total1 += 500;
                                         pedido1 += "\nCafe con medialuna";
+                                    }else if (opPlato > 4){
+                                        System.out.println("""
+                                        xxx-Esta opcion no corresponde a ningun plato-xxx
+                                        Por favor, ingrese una opcion existente
+                                                                           """);
                                     }
                                     break;
                                 case 4:
@@ -202,6 +242,11 @@ public class LodePipo {
                                     } else if (opPlato == 5) {
                                         total1 += 500;
                                         pedido1 += "\nAgua Mineral - 1000ml";
+                                    }else if (opPlato > 5){
+                                        System.out.println("""
+                                        xxx-Esta opcion no corresponde a ningun plato-xxx
+                                        Por favor, ingrese una opcion existente
+                                                                           """);
                                     }
                                     break;
                                 case 5:
@@ -231,6 +276,11 @@ public class LodePipo {
                             } else if (opPlato == 3) {
                                 total2 += 500;
                                 pedido2 += "\nEnsalada";
+                            }else if (opPlato > 3){
+                                System.out.println("""
+                                        xxx-Esta opcion no corresponde a ningun plato-xxx
+                                        Por favor, ingrese una opcion existente
+                                                                           """);
                             }
                             break;
                         case 2:
@@ -251,6 +301,11 @@ public class LodePipo {
                             } else if (opPlato == 5) {
                                 total2 += 500;
                                 pedido2 += "\nRavioles";
+                            }else if (opPlato > 5){
+                                System.out.println("""
+                                        xxx-Esta opcion no corresponde a ningun plato-xxx
+                                        Por favor, ingrese una opcion existente
+                                                                           """);
                             }
                             break;
                         case 3:
@@ -268,6 +323,11 @@ public class LodePipo {
                             } else if (opPlato == 4) {
                                 total2 += 500;
                                 pedido2 += "\nCafe con medialuna";
+                            }else if (opPlato > 4){
+                                System.out.println("""
+                                        xxx-Esta opcion no corresponde a ningun plato-xxx
+                                        Por favor, ingrese una opcion existente
+                                                                           """);
                             }
                             break;
                         case 4:
@@ -288,6 +348,11 @@ public class LodePipo {
                             } else if (opPlato == 5) {
                                 total2 += 500;
                                 pedido2 += "\nAgua Mineral - 1000ml";
+                            }else if (opPlato > 5){
+                                System.out.println("""
+                                        xxx-Esta opcion no corresponde a ningun plato-xxx
+                                        Por favor, ingrese una opcion existente
+                                                                           """);
                             }
                             break;
                         case 5:
@@ -300,10 +365,25 @@ public class LodePipo {
                     }
                 } while (opCarta != 0);
 
-            }else if(opMesa = 4){
-                System.out.println(Carta);
-            }
+            } else if(opMesa == 4){
+                System.out.println("""
+                        -----------------------------------------------------------
+                        
+                        *******************CARTA*******************
+                        """);
+                for (Integer key : Carta.keySet()) {
+                    System.out.println(Carta.get(key) + " ------- $" + key);
+                }
+
+                }
                 } while (opMesa != 0);
+        System.out.println("""
+                Programa finalizado con exito
+                            
+                            Gracias por utilizar el programa
+                
+                
+                """);
             }
 
             static void mostrarMenu(){
